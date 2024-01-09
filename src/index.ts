@@ -148,7 +148,7 @@ export class Generator {
  * @type {SnowflakeResolvable}
  */
 
-type SnowflakeResolvable = string | number | bigint;
+export type SnowflakeResolvable = string | number | bigint;
 
 /**
  * Interface of a Snowflake after `Generator.deconstruct()`.
@@ -160,7 +160,7 @@ type SnowflakeResolvable = string | number | bigint;
  * @interface DeconstructedSnowflake
  */
 
-interface DeconstructedSnowflake {
+export interface DeconstructedSnowflake {
   snowflake: bigint;
   timestamp: bigint;
   shard_id: bigint;
